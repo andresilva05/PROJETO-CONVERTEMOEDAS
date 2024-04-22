@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #6ec1b9;
+}
+main {
+    background: #ffffff;
+    width: 375px;
+    /* height: 712px; */
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+.img-banco{
+    mix-blend-mode: multiply;
+    width: 300px;
+    align-items: center;
+    display: block;  /*imagens vem por padrão com display inline  */
+    margin-left: auto;
+    /* adiciono auto nas margins para centralizar minha imagem */
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select , input {
+    width: 100%;
+    height: 48px;
+    background: #ffffff;
+    color: #555555;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB;;
+    margin-bottom: 24px;
+    appearance: none; /*seta ao lado do select  */
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+}
+select {
+    cursor: pointer;
+}
+/* input {
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px;
+} */
+button {
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    background: #772FD3;
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-img {
+    margin: 15px 0;
+}
+
+.currency-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+color: #777777;
+font-size: 14px;
+}
+.currency-value, .currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}

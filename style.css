@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,25 +9,22 @@
 body {
     background-color: #6ec1b9;
 }
+
 main {
     background: #ffffff;
-    width: 375px;
-    /* height: 712px; */
+    width: 90%;
+    max-width: 375px;
     border-radius: 20px;
     margin: 0 auto 40px;
     padding: 44px 24px 23px;
 }
 
-.img-banco{
+.img-banco {
     mix-blend-mode: multiply;
-    width: 300px;
-    align-items: center;
-    display: block;  /*imagens vem por padrão com display inline  */
-    margin-left: auto;
-    /* adiciono auto nas margins para centralizar minha imagem */
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 20px auto;
 }
 
 label {
@@ -36,28 +33,24 @@ label {
     font-size: 14px;
 }
 
-select , input {
+select, input {
     width: 100%;
     height: 48px;
     background: #ffffff;
     color: #555555;
     border-radius: 4px;
-    border: 1px solid #BBBBBB;;
+    border: 1px solid #BBBBBB;
     margin-bottom: 24px;
-    appearance: none; /*seta ao lado do select  */
+    appearance: none;
     padding-left: 18px;
     font-weight: 700;
     font-size: 16px;
 }
+
 select {
     cursor: pointer;
 }
-/* input {
-    width: 327px;
-    height: 48px;
-    border-radius: 4px;
-    border: 1px;
-} */
+
 button {
     width: 100%;
     height: 48px;
@@ -73,6 +66,7 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
 button:active {
     opacity: 0.6;
 }
@@ -91,7 +85,7 @@ section {
     margin: 15px 0;
 }
 
-.currency-box{
+.currency-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,11 +93,45 @@ section {
 }
 
 .currency {
-color: #777777;
-font-size: 14px;
+    color: #777777;
+    font-size: 14px;
 }
+
 .currency-value, .currency-value-to-convert {
     color: #555555;
     font-weight: 700;
     font-size: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    main {
+        padding: 20px 10px;
+    }
+
+    .img-banco {
+        width: 80%;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .currency-value, .currency-value-to-convert {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    main {
+        width: 80%;
+    }
+
+    .img-banco {
+        width: 90%;
+    }
+
+    button {
+        font-size: 17px;
+    }
 }
